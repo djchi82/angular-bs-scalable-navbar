@@ -1,0 +1,30 @@
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-md navbar-blue">
+          <a>
+            <span class="site-name">Angular Bootstrap</span>
+          </a>
+          <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+                  (click)="isCollapsed = !isCollapsed">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- The menu items -->
+          <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+          <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-link"><a class="text-center" href="https://angular.io/tutorial">Tour of Heroes</a>
+              </li>
+              <li class="navbar-link"><a class="text-center" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
+              </li>
+              <li class="navbar-link"><a class="text-center" href="https://blog.angular.io/">Angular Blog</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
